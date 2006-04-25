@@ -14,5 +14,7 @@
 	<classpathentry kind="var" path="MAVEN_REPO/xerces/jars/xmlParserAPIs-2.6.2.jar"/>
 	<classpathentry kind="var" path="MAVEN_REPO/xerces/jars/xercesImpl-2.6.2.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/kernel"/>
+	<classpathentry kind="src" path="/util"/>
+	<classpathentry kind="src" path="/component-api"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
