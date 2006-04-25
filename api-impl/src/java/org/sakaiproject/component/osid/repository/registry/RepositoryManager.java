@@ -75,7 +75,7 @@ System.out.println(this + " assigning context to be "+context);
                 if ( this.idManager != null ) return this.idManager;
                 try {
                         this.idManager = (org.osid.id.IdManager) 
-                                org.sakaiproject.service.framework.component.cover.ComponentManager.get(org.osid.id.IdManager.class);
+                                org.sakaiproject.component.cover.ComponentManager.get(org.osid.id.IdManager.class);
         
                 } catch (Throwable t) {
                         log(t);
