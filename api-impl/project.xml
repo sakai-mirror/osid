@@ -3,7 +3,7 @@
 <project>
 	<pomVersion>3</pomVersion>
 	<extend>../../master/project.xml</extend>
-	<name>OSID Component Package</name>
+	<name>sakai-osid-impl</name>
 	<groupId>sakaiproject</groupId>
 	<id>sakai-osid-impl</id>
 	<currentVersion>${sakai.version}</currentVersion>
@@ -30,36 +30,24 @@
 			<groupId>sakaiproject</groupId>
 			<artifactId>sakai-component</artifactId>
 			<version>${sakai.version}</version>
-			<properties>
-				<war.bundle>true</war.bundle>
-			</properties>
 		</dependency>
 
 		<dependency>
 			<groupId>sakaiproject</groupId>
 			<artifactId>sakai-util-api</artifactId>
 			<version>${sakai.version}</version>
-			<properties>
-				<war.bundle>true</war.bundle>
-			</properties>
 		</dependency>
 
         <dependency>
-                <groupId>OKI</groupId>
-                <artifactId>okiRegistry</artifactId>
-                <version>2005-10-19</version>
-                <properties>
-                        <war.bundle>true</war.bundle>
-                </properties>
+            <groupId>OKI</groupId>
+            <artifactId>okiRegistry</artifactId>
+            <version>2005-10-19</version>
         </dependency>
         
         <dependency>
-                <groupId>OKI</groupId>
-                <artifactId>okiSearchAdjusters</artifactId>
-                <version>2005-10-19</version>
-                <properties>
-                        <war.bundle>true</war.bundle>
-                </properties>
+            <groupId>OKI</groupId>
+            <artifactId>okiSearchAdjusters</artifactId>
+            <version>2005-10-19</version>
         </dependency>
 
 		<dependency>
@@ -81,6 +69,16 @@
 				<directory>${basedir}/src/bundle</directory>
 				<includes>
 					<include>**/*.properties</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<!-- other resources for the jar - the OSID xml registries -->
+		<resources>
+			<resource>
+				<directory>${basedir}/src/bundle</directory>
+				<includes>
+					<include>**/*.xml</include>
 				</includes>
 			</resource>
 		</resources>

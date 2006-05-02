@@ -3,9 +3,9 @@
 <project>
 	<pomVersion>3</pomVersion>
 	<extend>../../master/project.xml</extend>
-	<name>OSID Component Package</name>
+	<name>sakai-osid-pack</name>
 	<groupId>sakaiproject</groupId>
-	<id>sakai-osid-component</id>
+	<id>sakai-osid-pack</id>
 	<currentVersion>${sakai.version}</currentVersion>
 	<organization>
 		<name>Sakai Project</name>
@@ -20,10 +20,15 @@
 
 	<dependencies>
 
+		<!-- We host the OSID API to shared -->
 		<dependency>
 			<groupId>OKI</groupId>
 			<artifactId>OkiOSID</artifactId>
 			<version>2.0</version>
+			<properties>
+				<!-- deploy dependency jar to "shared", "common" or "server": use <war.bundle>true</war.bundle> to include in war -->
+				<deploy.target>shared</deploy.target>
+			</properties>
 		</dependency>
 
 		<!-- Our jar of api implemenntations -->
@@ -35,49 +40,35 @@
 				<war.bundle>true</war.bundle>
 			</properties>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>sakaiproject</groupId>
 			<artifactId>sakai-component</artifactId>
 			<version>${sakai.version}</version>
-			<properties>
-				<war.bundle>true</war.bundle>
-			</properties>
 		</dependency>
 
         <dependency>
-                <groupId>OKI</groupId>
-                <artifactId>okiRegistry</artifactId>
-                <version>2005-10-19</version>
-                <properties>
-                        <war.bundle>true</war.bundle>
-                </properties>
+            <groupId>OKI</groupId>
+            <artifactId>okiRegistry</artifactId>
+            <version>2005-10-19</version>
+            <properties>
+            	<war.bundle>true</war.bundle>
+            </properties>
         </dependency>
         <dependency>
-                <groupId>OKI</groupId>
-                <artifactId>okiSearchAdjusters</artifactId>
-                <version>2005-10-19</version>
-                <properties>
-                        <war.bundle>true</war.bundle>
-                </properties>
+            <groupId>OKI</groupId>
+            <artifactId>okiSearchAdjusters</artifactId>
+            <version>2005-10-19</version>
+            <properties>
+            	<war.bundle>true</war.bundle>
+            </properties>
         </dependency>
 
 	</dependencies>
 
 	<build>
 
-		<!-- java source -->
 		<sourceDirectory>src/java</sourceDirectory>
-
-		<!-- other resources for the jar - the message bundles -->
-		<resources>
-			<resource>
-				<directory>${basedir}/src/bundle</directory>
-				<includes>
-					<include>**/*.properties</include>
-				</includes>
-			</resource>
-		</resources>
 
 	</build>
 
