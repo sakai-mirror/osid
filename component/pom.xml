@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>master</artifactId>
+    <groupId>org.sakaiproject</groupId>
+    <version>M2</version>
+    <relativePath>../../master/pom.xml</relativePath>
+  </parent>
+  <name>sakai-osid-pack</name>
+  <groupId>org.sakaiproject</groupId>
+  <artifactId>sakai-osid-pack</artifactId>
+  <organization>
+    <name>Sakai Project</name>
+    <url>http://www.sakaiproject.org/</url>
+  </organization>
+  <inceptionYear>2005</inceptionYear>
+  <packaging>sakai-component</packaging>
+  <properties>
+    <deploy.target>components</deploy.target>
+  </properties>
+  <dependencies>
+<!-- We host the OSID API to shared -->
+    <dependency>
+      
+      <groupId>OKI</groupId>
+      <artifactId>OkiOSID</artifactId>
+      <version>2.0</version>
+<!--properties:  deploy.target: shared -->
+      <scope>provided</scope>
+    </dependency>
+<!-- Our jar of api implemenntations -->
+    <dependency>
+      
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-osid-impl</artifactId>
+      <version>${sakai.version}</version>
+    </dependency>
+    <dependency>
+      
+      <groupId>org.sakaiproject</groupId>
+      <artifactId>sakai-component</artifactId>
+      <version>${sakai.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      
+      <groupId>OKI</groupId>
+      <artifactId>okiRegistry</artifactId>
+      <version>2005-10-19</version>
+    </dependency>
+    <dependency>
+      
+      <groupId>OKI</groupId>
+      <artifactId>okiSearchAdjusters</artifactId>
+      <version>2005-10-19</version>
+    </dependency>
+  </dependencies>
+  <build>
+    
+    
+    
+    
+    
+    
+    <resources/>
+    
+  </build>
+</project>
