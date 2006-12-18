@@ -34,11 +34,11 @@ import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.apache.html.dom.HTMLDocumentImpl;
-import org.apache.xml.serialize.HTMLSerializer;
-import org.apache.xml.serialize.Method;
-import org.apache.xml.serialize.OutputFormat;
-import org.apache.xml.serialize.XMLSerializer;
+import com.sun.org.apache.html.internal.dom.HTMLDocumentImpl;
+import com.sun.org.apache.xml.internal.serialize.HTMLSerializer;
+import com.sun.org.apache.xml.internal.serialize.Method;
+import com.sun.org.apache.xml.internal.serialize.OutputFormat;
+import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
