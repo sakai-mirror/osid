@@ -14,7 +14,6 @@
   <modules>
     <module>api-impl</module>
     <module>component</module>
-    <module>osid-repository-tool</module>
     <module>osid-unit-test</module>
     <module>osid-shared-deploy</module>
   </modules>
