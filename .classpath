@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-  <classpathentry excluding="**/.DS_Store" kind="src" path="api-impl/src/java"/>
-  <classpathentry excluding="**/.DS_Store" kind="src" path="osid-unit-test/src/java"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry kind="var" path="M2_REPO/OKI/OkiOSID/2.0/OkiOSID-2.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/OKI/okiSearchAdjusters/2005-10-19/okiSearchAdjusters-2005-10-19.jar"/>
-  <classpathentry kind="var" path="M2_REPO/OKI/okiRegistry/2005-10-19/okiRegistry-2005-10-19.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/nekohtml/nekohtml/0.9.4/nekohtml-0.9.4.jar"/>
-  <classpathentry kind="src" path="/component-api"/>
-  <classpathentry combineaccessrules="false" kind="src" path="/util-api"/>
-  <classpathentry combineaccessrules="false" kind="src" path="/util-util"/>
-  <classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar"/>
-  <classpathentry kind="output" path="bin"/>
+	<classpathentry excluding="**/.DS_Store" kind="src" path="api-impl/src/java"/>
+	<classpathentry excluding="**/.DS_Store" kind="src" path="osid-unit-test/src/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="M2_REPO/OKI/OkiOSID/2.0/OkiOSID-2.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/OKI/okiSearchAdjusters/2005-10-19/okiSearchAdjusters-2005-10-19.jar"/>
+	<classpathentry kind="var" path="M2_REPO/OKI/okiRegistry/2005-10-19/okiRegistry-2005-10-19.jar"/>
+	<classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar"/>
+	<classpathentry kind="src" path="/component-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util-util"/>
+	<classpathentry kind="var" path="M2_REPO/xerces/xercesImpl/2.6.2/xercesImpl-2.6.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
 </classpath>
